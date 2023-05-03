@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header{
+    width: calc(100% - 250px);
+    height: 100px;
+    background-color: rgba(128,128,128,0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+
+/* NAV */
+nav{
+    width: 250px;
+    height: calc(100% - 100px);
+    background-color: blue;
+    position: fixed;
+    z-index: 2;
+}
+
+
+/* MAIN */
+main{
+    height: 100%;
+    width: calc(100% - 250px);
+    background-color: aquamarine;
+    margin-left: 250px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.col_nav_main{
+    width: 50%;
+    height: 50px;
+    background-color: yellow;
+    margin: auto;
+}
+
+.col_recently{
+    width: 95%;
+    margin: auto;
+    height: 200px;
+    background-color: yellow;
+    margin-top: 150px;
+}
+
+.col_for_John{
+    width: 30%;
+    margin-left: 2.5%;
+    height: 200px;
+    background-color: yellow;
+    margin-top: 150px;
+}
+
+.col_popular{
+    width: 30%;
+    margin-left: 2.5%;
+    height: 200px;
+    background-color: yellow;
+    margin-top: 150px;
+}
+
+/* FOOTER */
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: red;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+}
