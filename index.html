@@ -1,89 +1,170 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="./css/style.css">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-            <title>Spotify</title>
-        </head>
-        <body>
-            <!-- HEADER -->
-            <header>
-                <div class="container_header">
-                    <div class="row_header">
-                        <div class="col_header">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify</title>
+</head>
+<body>
+    <!-- ------MAIN------ -->
+    <main>
+        <!-- ---sidebar--- -->
+        <div class="sidebar">
+            <!-- ---top_sidebar--- -->
+            <div class="top_sidebar">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="">
+                </div>
+                <div class="main_menu">
+                    <ul>
+                        <li><img src="./img/home.svg" alt=""><a class="text_middle" href="#"><strong>Home</strong></a></li>
+                        <li><img src="./img/search.svg" alt=""><a class="text_middle" href="#"><strong>Cerca</strong></a></li>
+                        <li><img src="./img/libreria.svg" alt=""><a class="text_middle" href="#"><strong>La tua libreria</strong></a></li>
+                    </ul>
+                </div>
+                <div class="playlist">
+                    <h3>PLAYLIST</h3>
+                    <div class="menu_list">
+                        <ul>
+                            <li><i class="fa-sharp fa-solid fa-square-plus"></i><a id="menu_list_text_middle" href="#"><strong>Crea Playlist</strong></a></li>
+                            <li><a href="#"><strong>Nome Playlist</strong></a></li>
+                            <li><a href="#"><strong>Nome Playlist</strong></a></li>
+                            <li><a href="#"><strong>Nome Playlist</strong></a></li>
+                            <li><a href="#"><strong>Nome Playlist</strong></a></li>
+                            <li><a href="#"><strong>Nome Playlist</strong></a></li>
+                            <li><a href="#"><strong>Nome Playlist</strong></a></li>
+                            <li><a href="#"><strong>Nome Playlist</strong></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ---mini top sidebar--- -->
+            <div class="mini_top_sidebar">
+                <div class="mini_logo">
+                    <img src="./img/logo-small.svg" alt="">
+                </div>
+                <div class="mini_main_menu">
+                    <img src="./img/home.svg" alt="">
+                    <img src="./img/search.svg" alt="">
+                    <img src="./img/libreria.svg" alt="">
+                </div>
+            </div>
+            <!-- ---bottom sidebar--- -->
+            <div class="bottom_sidebar">
+                <div class="install">
+                    <img src="./img/download.svg" alt="">
+                    <p class="inline_block"><strong>Installa app</strong></p>
+                </div>
+                <hr>
+                <div class="profile">
+                    <img src="./img/profile.svg" alt="">
+                    <h3 class="inline_block">John Doe</h3>
+                </div>
+            </div>
+            <!-- ---mini bottom sidebar--- -->
+            <div class="mini_bottom_sidebar">
+                <div class="mini_install_profile">
+                    <img id="mini_install" src="./img/download.svg" alt="">
+                    <img id="mini_profile" src="./img/profile.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- ---main content--- -->
+        <div class="main_content">
+            <!-- top bar -->
+            <div class="top_bar">
+                <div class="container_top_bar">
+                    <div class="row_top_bar">
+                        <div class="col_top_bar">
                             <a href="#"><strong>EFFETTUA L'UPGRADE</strong></a>
                         </div>
                     </div>
                 </div>
-            </header>
-            <!-- SIDEBAR -->
-            <div class="sidebar">
-                <div class="top_sidebar">
-                    <div class="logo">
-                        <img src="./img/logo.svg" alt="">
-                    </div>
-                    <div class="main_menu">
-                        <div>
-                            <img src="./img/home.svg" alt="">
-                            <p class="inline_block"><strong>Home</strong></p>
-                        </div>
-                        <div>
-                            <img src="./img/search.svg" alt="">
-                            <p class="inline_block"><strong>Cerca</strong></p>
-                        </div>
-                        <div>
-                            <img src="./img/libreria.svg" alt="">
-                            <p class="inline_block"><strong>La tua libreria</strong></p>
-                        </div>
-                    </div>
-                    <div class="playlist">
-                        <h3>PLAYLIST</h3>
-                        <div class="plus">
-                            <i class="fa-sharp fa-solid fa-square-plus"></i>
-                            <p class="inline_block"><strong>Crea Playlist</strong></p>
-                        </div>
-                        <div class="menu_list">
-                            <ul>
-                                <li><strong>Nome Playlist</strong></li>
-                                <li><strong>Nome Playlist</strong></li>
-                                <li><strong>Nome Playlist</strong></li>
-                                <li><strong>Nome Playlist</strong></li>
-                                <li><strong>Nome Playlist</strong></li>
-                                <li><strong>Nome Playlist</strong></li>
-                                <li><strong>Nome Playlist</strong></li>
-                            </ul>
-                        </div>
+            </div>
+            <!-- content -->
+            <div class="content">
+                <div class="row">
+                    <div class="coll text_center">
+                        <ul class="inline_menu">
+                            <li><a class="active" href="#"><strong>IN EVIDENZA</strong></a></li>
+                            <li><a href="#"><strong>PODCAST</strong></a></li>
+                            <li><a href="#"><strong>CLASSIFICHE</strong></a></li>
+                            <li><a href="#"><strong>GENERI E MOOD</strong></a></li>
+                            <li><a href="#"><strong>NUOVE USCITE</strong></a></li>
+                            <li><a href="#"><strong>SCOPRI</strong></a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="bottom_sidebar">
-                    <div class="install">
-                        <img src="./img/download.svg" alt="">
-                        <p class="inline_block"><strong>Installa app</strong></p>
+                <div class="title_music_section">
+                    <h1>Recently played</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="./img/metal_lifting.jpg" alt="">
+                        <h3>Heavy Metal</h3>
+                        <p><strong>Subtitle</strong></p>
                     </div>
-                    <hr>
-                    <div class="profile">
-                        <img src="./img/profile.svg" alt="">
-                        <h3 class="inline_block">John Doe</h3>
+                    <div class="col">
+                        <img src="./img/stranger.jpeg" alt="">
+                        <h3>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                        <p><strong>Kyle Dixon & Michael Stein</strong></p>
+                    </div>
+                    <div class="col">
+                        <img src="./img/aquietplace.jpeg" alt="">
+                        <h3>A quiet place</h3>
+                        <p><strong>Subtitle</strong></p>
+                    </div>
+                    <div class="col">
+                        <img src="./img/split.jpeg" alt="">
+                        <h3>Split</h3>
+                        <p><strong>Subtitle</strong></p>
+                    </div>
+                    <div class="col">
+                        <img src="./img/cure.jpeg" alt="">
+                        <h3>A cure for wellness</h3>
+                        <p><strong>Subtitle</strong></p>
+                    </div>
+                    <div class="col">
+                        <img src="./img/sinister.jpeg" alt="">
+                        <h3>Sinister</h3>
+                        <p><strong>Subtitle</strong></p>
+                    </div>
+                </div>
+                <div class="title_music_section">
+                    <h1>Creato per John Doe</h1>
+                    <p class="text_aling_left"><strong>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti</strong></p>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="./img/radar.jpeg" alt="">
+                        <h3>Release Radar</h3>
+                    </div>
+                    <div class="col">
+                        <img src="./img/mixdaily.jpeg" alt="">
+                        <h3>Daily Mix 1</h3>
+                    </div>
+                </div>
+                <div class="title_music_section">
+                    <h1>Artisti pi&ugrave; popolari</h1>
+                    <p class="text_aling_left"><strong>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti</strong></p>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="./img/youg.jpeg" alt="">
+                        <h3>Lana del Rey</h3>
+                    </div>
+                    <div class="col">
+                        <img src="./img/einaudi.jpeg" alt="">
+                        <h3>Ludovico Einaudi</h3>
                     </div>
                 </div>
             </div>
-            <!-- MAIN -->
-            <main>
-                <div class="container">
-                    <div class="row">
-                        <div class="col_nav_main"></div>
-                        <div class="col_recently"></div>
-                        <div class="col_for_John"></div>
-                        <div class="col_popular"></div>
-                    </div>
-                </div>
-            </main>
-            <!-- FOOTER -->
-            <footer>
-            </footer>
-        </body>
-    </html>
+    </main>
+    <!-- ------BOTTOM BAR------ -->
+    <div class="bottom_bar"></div>
+</body>
+</html>
