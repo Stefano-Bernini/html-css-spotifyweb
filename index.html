@@ -104,32 +104,62 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <img src="./img/metal_lifting.jpg" alt="">
+                        <div class="album_card">
+                            <img src="./img/metal_lifting.jpg" alt="">
+                            <div class="overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
                         <h3>Heavy Metal</h3>
                         <p><strong>Subtitle</strong></p>
                     </div>
                     <div class="col">
-                        <img src="./img/stranger.jpeg" alt="">
+                        <div class="album_card">
+                            <img src="./img/stranger.jpeg" alt="">
+                            <div class="overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
                         <h3>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
                         <p><strong>Kyle Dixon & Michael Stein</strong></p>
                     </div>
                     <div class="col">
-                        <img src="./img/aquietplace.jpeg" alt="">
+                        <div class="album_card">
+                            <img src="./img/aquietplace.jpeg" alt="">
+                            <div class="overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
                         <h3>A quiet place</h3>
                         <p><strong>Subtitle</strong></p>
                     </div>
                     <div class="col">
-                        <img src="./img/split.jpeg" alt="">
+                        <div class="album_card">
+                            <img src="./img/split.jpeg" alt="">
+                            <div class="overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
                         <h3>Split</h3>
                         <p><strong>Subtitle</strong></p>
                     </div>
                     <div class="col">
-                        <img src="./img/cure.jpeg" alt="">
+                        <div class="album_card">
+                            <img src="./img/cure.jpeg" alt="">
+                            <div class="overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
                         <h3>A cure for wellness</h3>
                         <p><strong>Subtitle</strong></p>
                     </div>
                     <div class="col">
-                        <img src="./img/sinister.jpeg" alt="">
+                        <div class="album_card">
+                            <img src="./img/sinister.jpeg" alt="">
+                            <div class="overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
                         <h3>Sinister</h3>
                         <p><strong>Subtitle</strong></p>
                     </div>
@@ -140,11 +170,21 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <img src="./img/radar.jpeg" alt="">
+                        <div class="album_card">
+                            <img src="./img/radar.jpeg" alt="">
+                            <div class="overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
                         <h3>Release Radar</h3>
                     </div>
                     <div class="col">
-                        <img src="./img/mixdaily.jpeg" alt="">
+                        <div class="album_card">
+                            <img src="./img/mixdaily.jpeg" alt="">
+                            <div class="overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
                         <h3>Daily Mix 1</h3>
                     </div>
                 </div>
@@ -154,17 +194,75 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <img src="./img/youg.jpeg" alt="">
+                        <div class="album_card">
+                            <img class="border_radius" src="./img/youg.jpeg" alt="">
+                            <div class="overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
                         <h3>Lana del Rey</h3>
                     </div>
                     <div class="col">
-                        <img src="./img/einaudi.jpeg" alt="">
+                        <div class="album_card">
+                            <img class="border_radius" src="./img/einaudi.jpeg" alt="">
+                            <div class="overlay">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                        </div>
                         <h3>Ludovico Einaudi</h3>
                     </div>
                 </div>
             </div>
     </main>
     <!-- ------BOTTOM BAR------ -->
-    <div class="bottom_bar"></div>
+    <div class="bottom_bar">
+        <div class="w_230_left">
+            <div class="playing">
+                <img src="./img/sinister.jpeg" alt="">
+                <div>
+                    <h5>Sinister</h5>
+                    <p><strong>Brano Nome</strong></p>
+                </div>
+            </div>
+            <div class="reaction">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
+            </div>
+        </div>
+        <div class="controller">
+            <div class="music_control">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i id="play_size" class="far fa-play-circle"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+            <div class="player_controller_time">
+                <div class="controller_time">0:25</div>
+                <div class="bar">
+                    <div class="controller_elapsed">
+                        <div class="controller_time_elapsed"></div>
+                    </div>
+                </div>
+                <div class="controller_time">4:35</div>
+            </div>
+        </div>
+        <div class="w_230_right">
+            <div class="controller_sound">
+            <div class="player_controller_sound">
+                <div class="list_device_sound">
+                    <i class="fa-solid fa-list-ul"></i>
+                    <i class="fa-solid fa-desktop"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="bar">
+                    <div class="controller_elapsed">
+                        <div class="controller_time_elapsed"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
